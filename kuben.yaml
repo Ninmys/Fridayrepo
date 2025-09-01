@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: sample-app-service
+  name: sample-app-service-v2
 spec:
   selector:
     app: sample-app
@@ -31,5 +31,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-      nodePort: 30082
+      nodePort: 30083
   type: NodePort
