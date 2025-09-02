@@ -5,7 +5,7 @@ metadata:
   labels:
     app: sample-app
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: sample-app
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: sample-app-service-v5
+  name: sample-app-service-v6
 spec:
   selector:
     app: sample-app
@@ -31,5 +31,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-      nodePort: 30086
+      nodePort: 30087
   type: NodePort
