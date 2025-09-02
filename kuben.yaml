@@ -5,7 +5,7 @@ metadata:
   labels:
     app: sample-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: sample-app
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: sample-app-service-v4
+  name: sample-app-service-v5
 spec:
   selector:
     app: sample-app
