@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nithinmys/sample-app:fourthbuild
+          image: 10.150.37.207:8085/library/sample_app:b3-2dc203b
           ports:
             - containerPort: 80
 ---
