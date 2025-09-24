@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: 10.150.37.207:8085/library/sample_app:b3-2dc203b
+          image: nithinmys/nonharbor
           ports:
             - containerPort: 80
 ---
@@ -31,5 +31,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-      nodePort: 30097
+      nodePort: 30098
   type: NodePort
