@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: 10.71.1.59:8085/os-images/alpine:3.19
+          image: docker.io/nithinmys/testns:v1
           ports:
             - containerPort: 80
 ---
