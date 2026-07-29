@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: sample-app-service-v6
+  name: sample-app-service
 spec:
   selector:
     app: sample-app
