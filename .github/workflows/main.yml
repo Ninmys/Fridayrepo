@@ -40,7 +40,7 @@ jobs:
           }
           EOF
           jq -c . payload.json > payload_compact.json
-          mv payload_compact.json payload.json
+          mv payload_compact.json payload.json 
           perl -pi -e 'chomp if eof' payload.json
 
       - name: Trigger internal SSP webhook handler
